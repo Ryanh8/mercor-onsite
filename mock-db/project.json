@@ -1,0 +1,566 @@
+[
+  {
+    "id": "proj_website_redesign",
+    "archived": false,
+    "statuses": [
+      "To do",
+      "In progress",
+      "Review",
+      "Done"
+    ],
+    "priorities": [
+      "low",
+      "medium",
+      "high",
+      "urgent"
+    ],
+    "billable": true,
+    "payroll": {
+      "billRate": 85,
+      "overtimeBillRate": 127.5
+    },
+    "name": "Website Redesign",
+    "employees": [
+      "emp_001_sarah_johnson",
+      "emp_003_emily_rodriguez",
+      "emp_005_jessica_taylor",
+      "emp_007_maria_garcia",
+      "emp_011_amanda_davis"
+    ],
+    "creatorId": "emp_007_maria_garcia",
+    "organizationId": "org_techcorp_main",
+    "teams": [
+      "team_frontend_dev",
+      "team_design",
+      "team_qa",
+      "team_product",
+      "team_marketing"
+    ],
+    "createdAt": 1640995200000
+  },
+  {
+    "id": "proj_mobile_app",
+    "archived": false,
+    "statuses": [
+      "Backlog",
+      "In progress",
+      "Testing",
+      "Done"
+    ],
+    "priorities": [
+      "low",
+      "medium",
+      "high"
+    ],
+    "billable": true,
+    "payroll": {
+      "billRate": 90,
+      "overtimeBillRate": 135
+    },
+    "name": "Mobile Application Development",
+    "employees": [
+      "emp_001_sarah_johnson",
+      "emp_006_alex_thompson",
+      "emp_005_jessica_taylor",
+      "emp_007_maria_garcia"
+    ],
+    "creatorId": "emp_007_maria_garcia",
+    "organizationId": "org_techcorp_main",
+    "teams": [
+      "team_frontend_dev",
+      "team_qa",
+      "team_product"
+    ],
+    "createdAt": 1638316800000
+  },
+  {
+    "id": "proj_api_development",
+    "archived": false,
+    "statuses": [
+      "Planning",
+      "Development",
+      "Testing",
+      "Documentation",
+      "Complete"
+    ],
+    "priorities": [
+      "low",
+      "medium",
+      "high"
+    ],
+    "billable": true,
+    "payroll": {
+      "billRate": 95,
+      "overtimeBillRate": 142.5
+    },
+    "name": "API Development & Integration",
+    "employees": [
+      "emp_002_michael_chen",
+      "emp_008_james_wilson",
+      "emp_005_jessica_taylor"
+    ],
+    "creatorId": "emp_002_michael_chen",
+    "organizationId": "org_techcorp_main",
+    "teams": [
+      "team_backend_dev",
+      "team_qa"
+    ],
+    "createdAt": 1635724800000
+  },
+  {
+    "id": "proj_database_optimization",
+    "archived": false,
+    "statuses": [
+      "Analysis",
+      "Implementation",
+      "Testing",
+      "Deployment"
+    ],
+    "priorities": [
+      "medium",
+      "high",
+      "critical"
+    ],
+    "billable": false,
+    "payroll": {
+      "billRate": 0,
+      "overtimeBillRate": 0
+    },
+    "name": "Database Performance Optimization",
+    "employees": [
+      "emp_002_michael_chen"
+    ],
+    "creatorId": "emp_002_michael_chen",
+    "organizationId": "org_techcorp_main",
+    "teams": [
+      "team_backend_dev"
+    ],
+    "createdAt": 1633046400000
+  },
+  {
+    "id": "proj_brand_refresh",
+    "archived": false,
+    "statuses": [
+      "Research",
+      "Concept",
+      "Design",
+      "Review",
+      "Final"
+    ],
+    "priorities": [
+      "low",
+      "medium",
+      "high"
+    ],
+    "billable": true,
+    "payroll": {
+      "billRate": 75,
+      "overtimeBillRate": 112.5
+    },
+    "name": "Brand Identity Refresh",
+    "employees": [
+      "emp_003_emily_rodriguez",
+      "emp_009_lisa_anderson",
+      "emp_011_amanda_davis"
+    ],
+    "creatorId": "emp_011_amanda_davis",
+    "organizationId": "org_techcorp_main",
+    "teams": [
+      "team_design",
+      "team_marketing"
+    ],
+    "createdAt": 1630454400000
+  },
+  {
+    "id": "proj_infrastructure",
+    "archived": false,
+    "statuses": [
+      "Planning",
+      "Setup",
+      "Configuration",
+      "Testing",
+      "Live"
+    ],
+    "priorities": [
+      "medium",
+      "high",
+      "critical"
+    ],
+    "billable": false,
+    "payroll": {
+      "billRate": 0,
+      "overtimeBillRate": 0
+    },
+    "name": "Cloud Infrastructure Migration",
+    "employees": [
+      "emp_004_david_kim",
+      "emp_014_daniel_white"
+    ],
+    "creatorId": "emp_004_david_kim",
+    "organizationId": "org_techcorp_main",
+    "teams": [
+      "team_devops"
+    ],
+    "createdAt": 1627862400000
+  },
+  {
+    "id": "proj_ci_cd_pipeline",
+    "archived": false,
+    "statuses": [
+      "Design",
+      "Implementation",
+      "Testing",
+      "Rollout"
+    ],
+    "priorities": [
+      "medium",
+      "high"
+    ],
+    "billable": false,
+    "payroll": {
+      "billRate": 0,
+      "overtimeBillRate": 0
+    },
+    "name": "CI/CD Pipeline Setup",
+    "employees": [
+      "emp_004_david_kim"
+    ],
+    "creatorId": "emp_004_david_kim",
+    "organizationId": "org_techcorp_main",
+    "teams": [
+      "team_devops"
+    ],
+    "createdAt": 1625270400000
+  },
+  {
+    "id": "proj_component_library",
+    "archived": false,
+    "statuses": [
+      "Planning",
+      "Development",
+      "Documentation",
+      "Testing",
+      "Published"
+    ],
+    "priorities": [
+      "low",
+      "medium",
+      "high"
+    ],
+    "billable": false,
+    "payroll": {
+      "billRate": 0,
+      "overtimeBillRate": 0
+    },
+    "name": "React Component Library",
+    "employees": [
+      "emp_006_alex_thompson",
+      "emp_013_stephanie_lee"
+    ],
+    "creatorId": "emp_006_alex_thompson",
+    "organizationId": "org_techcorp_main",
+    "teams": [
+      "team_frontend_dev"
+    ],
+    "createdAt": 1622678400000
+  },
+  {
+    "id": "proj_user_research",
+    "archived": false,
+    "statuses": [
+      "Planning",
+      "Recruiting",
+      "Conducting",
+      "Analysis",
+      "Report"
+    ],
+    "priorities": [
+      "low",
+      "medium",
+      "high"
+    ],
+    "billable": true,
+    "payroll": {
+      "billRate": 70,
+      "overtimeBillRate": 105
+    },
+    "name": "User Experience Research",
+    "employees": [
+      "emp_007_maria_garcia"
+    ],
+    "creatorId": "emp_007_maria_garcia",
+    "organizationId": "org_techcorp_main",
+    "teams": [
+      "team_product"
+    ],
+    "createdAt": 1620086400000
+  },
+  {
+    "id": "proj_microservices",
+    "archived": false,
+    "statuses": [
+      "Architecture",
+      "Development",
+      "Integration",
+      "Testing",
+      "Deployment"
+    ],
+    "priorities": [
+      "medium",
+      "high"
+    ],
+    "billable": true,
+    "payroll": {
+      "billRate": 100,
+      "overtimeBillRate": 150
+    },
+    "name": "Microservices Architecture",
+    "employees": [
+      "emp_008_james_wilson"
+    ],
+    "creatorId": "emp_008_james_wilson",
+    "organizationId": "org_techcorp_main",
+    "teams": [
+      "team_backend_dev"
+    ],
+    "createdAt": 1617494400000
+  },
+  {
+    "id": "proj_design_system",
+    "archived": false,
+    "statuses": [
+      "Research",
+      "Design",
+      "Documentation",
+      "Implementation",
+      "Adoption"
+    ],
+    "priorities": [
+      "low",
+      "medium",
+      "high"
+    ],
+    "billable": false,
+    "payroll": {
+      "billRate": 0,
+      "overtimeBillRate": 0
+    },
+    "name": "Design System Development",
+    "employees": [
+      "emp_009_lisa_anderson"
+    ],
+    "creatorId": "emp_009_lisa_anderson",
+    "organizationId": "org_techcorp_main",
+    "teams": [
+      "team_design"
+    ],
+    "createdAt": 1614902400000
+  },
+  {
+    "id": "proj_security_audit",
+    "archived": false,
+    "statuses": [
+      "Scope",
+      "Assessment",
+      "Analysis",
+      "Report",
+      "Remediation"
+    ],
+    "priorities": [
+      "high",
+      "critical"
+    ],
+    "billable": true,
+    "payroll": {
+      "billRate": 120,
+      "overtimeBillRate": 180
+    },
+    "name": "Security Audit & Assessment",
+    "employees": [
+      "emp_010_robert_brown"
+    ],
+    "creatorId": "emp_010_robert_brown",
+    "organizationId": "org_techcorp_main",
+    "teams": [
+      "team_security"
+    ],
+    "createdAt": 1612310400000
+  },
+  {
+    "id": "proj_compliance",
+    "archived": false,
+    "statuses": [
+      "Requirements",
+      "Gap Analysis",
+      "Implementation",
+      "Testing",
+      "Certification"
+    ],
+    "priorities": [
+      "high",
+      "critical"
+    ],
+    "billable": true,
+    "payroll": {
+      "billRate": 110,
+      "overtimeBillRate": 165
+    },
+    "name": "Compliance & Regulatory",
+    "employees": [
+      "emp_010_robert_brown"
+    ],
+    "creatorId": "emp_010_robert_brown",
+    "organizationId": "org_techcorp_main",
+    "teams": [
+      "team_security"
+    ],
+    "createdAt": 1609718400000
+  },
+  {
+    "id": "proj_analytics_platform",
+    "archived": false,
+    "statuses": [
+      "Requirements",
+      "Architecture",
+      "Development",
+      "Testing",
+      "Deployment"
+    ],
+    "priorities": [
+      "medium",
+      "high"
+    ],
+    "billable": true,
+    "payroll": {
+      "billRate": 105,
+      "overtimeBillRate": 157.5
+    },
+    "name": "Analytics Platform Development",
+    "employees": [
+      "emp_012_kevin_martinez"
+    ],
+    "creatorId": "emp_012_kevin_martinez",
+    "organizationId": "org_techcorp_main",
+    "teams": [
+      "team_data_science"
+    ],
+    "createdAt": 1607126400000
+  },
+  {
+    "id": "proj_ml_models",
+    "archived": false,
+    "statuses": [
+      "Research",
+      "Data Prep",
+      "Training",
+      "Validation",
+      "Production"
+    ],
+    "priorities": [
+      "low",
+      "medium",
+      "high"
+    ],
+    "billable": true,
+    "payroll": {
+      "billRate": 115,
+      "overtimeBillRate": 172.5
+    },
+    "name": "Machine Learning Models",
+    "employees": [
+      "emp_012_kevin_martinez"
+    ],
+    "creatorId": "emp_012_kevin_martinez",
+    "organizationId": "org_techcorp_main",
+    "teams": [
+      "team_data_science"
+    ],
+    "createdAt": 1604534400000
+  },
+  {
+    "id": "proj_performance_optimization",
+    "archived": false,
+    "statuses": [
+      "Profiling",
+      "Analysis",
+      "Optimization",
+      "Testing",
+      "Deployment"
+    ],
+    "priorities": [
+      "medium",
+      "high"
+    ],
+    "billable": false,
+    "payroll": {
+      "billRate": 0,
+      "overtimeBillRate": 0
+    },
+    "name": "Frontend Performance Optimization",
+    "employees": [
+      "emp_013_stephanie_lee"
+    ],
+    "creatorId": "emp_013_stephanie_lee",
+    "organizationId": "org_techcorp_main",
+    "teams": [
+      "team_frontend_dev"
+    ],
+    "createdAt": 1601942400000
+  },
+  {
+    "id": "proj_monitoring",
+    "archived": false,
+    "statuses": [
+      "Planning",
+      "Setup",
+      "Configuration",
+      "Testing",
+      "Active"
+    ],
+    "priorities": [
+      "medium",
+      "high",
+      "critical"
+    ],
+    "billable": false,
+    "payroll": {
+      "billRate": 0,
+      "overtimeBillRate": 0
+    },
+    "name": "System Monitoring & Alerting",
+    "employees": [
+      "emp_014_daniel_white"
+    ],
+    "creatorId": "emp_014_daniel_white",
+    "organizationId": "org_techcorp_main",
+    "teams": [
+      "team_devops"
+    ],
+    "createdAt": 1599350400000
+  },
+  {
+    "id": "proj_legacy_migration",
+    "archived": true,
+    "statuses": [
+      "Planning",
+      "Migration",
+      "Testing",
+      "Completed"
+    ],
+    "priorities": [
+      "high",
+      "critical"
+    ],
+    "billable": true,
+    "payroll": {
+      "billRate": 80,
+      "overtimeBillRate": 120
+    },
+    "name": "Legacy System Migration",
+    "employees": [],
+    "creatorId": "emp_015_former_employee",
+    "organizationId": "org_techcorp_main",
+    "teams": [],
+    "createdAt": 1596758400000
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "start": 1640995200000,
+    "end": 0,
+    "employeeId": "emp_001_sarah_johnson",
+    "projectId": "proj_website_redesign"
+  },
+  {
+    "start": 1640995200000,
+    "end": 1640998800000,
+    "employeeId": "emp_002_michael_chen",
+    "projectId": "proj_api_development"
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "id": "task_default_website_redesign",
+    "status": "In progress",
+    "priority": "high",
+    "billable": true,
+    "name": "Default Task - Website Redesign",
+    "projectId": "proj_website_redesign",
+    "employees": [
+      "emp_001_sarah_johnson",
+      "emp_003_emily_rodriguez",
+      "emp_005_jessica_taylor",
+      "emp_007_maria_garcia",
+      "emp_011_amanda_davis"
+    ],
+    "description": "Default task for website redesign project. All time tracking for this project should be logged here.",
+    "creatorId": "emp_007_maria_garcia",
+    "organizationId": "org_techcorp_main",
+    "teams": [
+      "team_frontend_dev",
+      "team_design",
+      "team_qa",
+      "team_product",
+      "team_marketing"
+    ],
+    "createdAt": 1640995200000
+  },
+  {
+    "id": "task_default_mobile_app",
+    "status": "In progress",
+    "priority": "high",
+    "billable": true,
+    "name": "Default Task - Mobile Application Development",
+    "projectId": "proj_mobile_app",
+    "employees": [
+      "emp_001_sarah_johnson",
+      "emp_006_alex_thompson",
+      "emp_005_jessica_taylor",
+      "emp_007_maria_garcia"
+    ],
+    "description": "Default task for mobile app project. All time tracking for this project should be logged here.",
+    "creatorId": "emp_007_maria_garcia",
+    "organizationId": "org_techcorp_main",
+    "teams": [
+      "team_frontend_dev",
+      "team_qa",
+      "team_product"
+    ],
+    "createdAt": 1638316800000
+  },
+  {
+    "id": "task_default_api_development",
+    "status": "In progress",
+    "priority": "medium",
+    "billable": true,
+    "name": "Default Task - API Development & Integration",
+    "projectId": "proj_api_development",
+    "employees": [
+      "emp_002_michael_chen",
+      "emp_008_james_wilson",
+      "emp_005_jessica_taylor"
+    ],
+    "description": "Default task for API development project. All time tracking for this project should be logged here.",
+    "creatorId": "emp_002_michael_chen",
+    "organizationId": "org_techcorp_main",
+    "teams": [
+      "team_backend_dev",
+      "team_qa"
+    ],
+    "createdAt": 1635724800000
+  }
+]
