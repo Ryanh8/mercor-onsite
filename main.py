@@ -52,9 +52,9 @@ def main():
         projects = data_manager.get_employee_projects(emp.id)
         print(f"  - {emp.name} ({emp.id}) - {len(projects)} projects")
     
-    # Run the app
+    # Run the app using import string for reload support
     uvicorn.run(
-        app,
+        "main:app",  # Use import string instead of app instance
         host="0.0.0.0",
         port=8000,
         reload=True,

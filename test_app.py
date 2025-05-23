@@ -5,7 +5,8 @@ Simple test for the main application functionality
 
 import json
 from datetime import datetime
-from main import MockDataManager, TimeTrackingService
+from src.services.data_manager import MockDataManager
+from src.services.time_tracking_service import TimeTrackingService
 
 
 def test_real_employee_workflow():

@@ -5,7 +5,8 @@ Clean workflow test - starts fresh and tests complete clock in/out
 
 import json
 from datetime import datetime
-from main import MockDataManager, TimeTrackingService
+from src.services.data_manager import MockDataManager
+from src.services.time_tracking_service import TimeTrackingService
 
 
 def test_clean_workflow():

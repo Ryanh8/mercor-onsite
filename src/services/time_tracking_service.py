@@ -2,6 +2,8 @@
 Time tracking service for managing employee work sessions
 """
 
+import platform
+import socket
 from datetime import datetime, timezone
 from typing import Optional
 
@@ -20,6 +22,73 @@ class TimeTrackingService:
         self.data_manager = data_manager
         self.screenshot_service = ScreenshotService()
         self.system_monitor = SystemMonitorService()
+    
+    def _populate_system_info(self, time_entry: TimeTracking) -> None:
+        """Populate system information for the time entry."""
+        try:
+            # Get system info
+            system_info = self.system_monitor.get_system_info()
+            
+            # Set system information
+            time_entry.set_system_info(
+                computer_name=system_info.hostname,
+                os_version=platform.release(),
+                domain=""
+            )
+            
+            # Set timezone offset (convert from timezone string to milliseconds)
+            if time_entry.timezone:
+                # For now, set a default offset - in production this would be calculated
+                time_entry.timezoneOffset = -7200000  # Example: -2 hours in milliseconds
+            
+        except Exception as e:
+            print(f"Warning: Could not populate system info: {e}")
+    
+    def _populate_employee_info(self, time_entry: TimeTracking, employee_id: str) -> None:
+        """Populate employee information for the time entry."""
+        try:
+            employee = self.data_manager.get_employee_by_id(employee_id)
+            if employee:
+                # Extract username from email (before @)
+                username = employee.email.split('@')[0] if employee.email else employee_id
+                time_entry.set_employee_info(employee.name, username)
+                
+                # Set organization info
+                time_entry.organizationId = employee.organization_id
+                time_entry.sharedSettingsId = employee.shared_settings_id
+                
+        except Exception as e:
+            print(f"Warning: Could not populate employee info: {e}")
+    
+    def _populate_project_info(self, time_entry: TimeTracking, project_id: str) -> None:
+        """Populate project and billing information for the time entry."""
+        try:
+            project = self.data_manager.get_project_by_id(project_id)
+            if project:
+                # Set billing information
+                time_entry.set_billing_info(
+                    bill_rate=project.payroll.bill_rate,
+                    pay_rate=0.0,  # Not available in our project model
+                    overtime_bill_rate=project.payroll.overtime_bill_rate,
+                    overtime_pay_rate=0.0  # Not available in our project model
+                )
+                time_entry.billable = project.billable
+                
+        except Exception as e:
+            print(f"Warning: Could not populate project info: {e}")
+    
+    def _populate_task_info(self, time_entry: TimeTracking, task_id: str) -> None:
+        """Populate task information for the time entry."""
+        try:
+            task = self.data_manager.get_task_by_id(task_id)
+            if task:
+                time_entry.set_task_info(
+                    status=task.status,
+                    priority=task.priority
+                )
+                
+        except Exception as e:
+            print(f"Warning: Could not populate task info: {e}")
     
     def clock_in(self, employee_id: str, project_id: Optional[str] = None, 
                 task_id: Optional[str] = None, timestamp: Optional[datetime] = None) -> TimeTracking:
@@ -79,6 +148,12 @@ class TimeTrackingService:
             teamId=employee.team_id,
             timezone="UTC"
         )
+        
+        # Populate additional information
+        self._populate_system_info(time_entry)
+        self._populate_employee_info(time_entry, employee_id)
+        self._populate_project_info(time_entry, project_id)
+        self._populate_task_info(time_entry, task_id)
         
         # Save time entry
         time_entries.append(time_entry)
